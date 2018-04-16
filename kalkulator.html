@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kalkulator</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <script src="js/bootstrap.js"></script>
+    <link rel="stylesheet" href="mystyle.css" />
+
+
+</head>
+
+<body>
+
+    <form action="" name="kalkulator">
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-sm-12">
+
+                    <input type="text" name="wynik" />
+                </div>
+
+
+            </div>
+
+
+            <div class="row">
+                <div class="col-sm-3"><input type="button" value="7" id="siedem" onClick="zapamietaj(7)"></div>
+                <div class="col-sm-3"><input type="button" value="8" id="osiem" onClick="zapamietaj(8)"></div>
+                <div class="col-sm-3"><input type="button" value="9" id="dziewiec" onClick="zapamietaj(9)"></div>
+                <div class="col-sm-3"><input type="button" value="x" id="iloczyn" onClick="zapamietaj('*')"></div>
+
+            </div>
+
+            <div class="row">
+                <div class="col-sm-3"><input type="button" value="4" id="cztery" onClick="kalkulator.wynik.value += '4'"></div>
+                <div class="col-sm-3"><input type="button" value="5" id="piec" onClick="kalkulator.wynik.value += '5'"></div>
+                <div class="col-sm-3"><input type="button" value="6" id="szesc" onClick="kalkulator.wynik.value += '6'"></div>
+                <div class="col-sm-3"><input type="button" value="-" id="roznica" onClick="kalkulator.wynik.value += '-'"></div>
+
+            </div>
+
+            <div class="row">
+                <div class="col-sm-3"><input type="button" value="1" id="jeden" onClick="kalkulator.wynik.value += '1'"></div>
+                <div class="col-sm-3"><input type="button" value="2" id="dwa" onClick="kalkulator.wynik.value += '2'"></div>
+                <div class="col-sm-3"><input type="button" value="3" id="trzy" onClick="kalkulator.wynik.value += '3'"></div>
+                <div class="col-sm-3"><input type="button" value="+" id="suma" onClick="kalkulator.wynik.value += '+'"></div>
+
+            </div>
+
+            <div class="row">
+                <div class="col-sm-3"><input type="button" value="/" id="iloraz" onClick="kalkulator.wynik.value += '/'"></div>
+                <div class="col-sm-3"><input type="button" value="0" id="zero" onClick="kalkulator.wynik.value += '0'"></div>
+                <div class="col-sm-3"><input type="button" value="C" id="clear" onClick="wyczysc()"></div>
+                <div class="col-sm-3"><input type="button" value="=" id="rowna sie" onClick="oblicz()"></div>
+
+            </div>
+
+            <div class="row">
+                <div class="col-sm-3"> <input type="button" value="sin" id="sin" onClick="rysuj1('sinus')"></div>
+                <div class="col-sm-3"> <input type="button" value="cos" id="cos" onClick="rysuj2('cosinus')"></div>
+                <div class="col-sm-3"> <input type="button" value="tg" id="tg" onClick="rysuj3('tangens')"></div>
+                <div class="col-sm-3"> <input type="button" value="ctg" id="ctg" onClick="rysuj4('cotangens')"></div>
+
+
+
+            </div>
+        </div>
+
+    </form>
+
+    <div class="container2">
+        <canvas id="sinus" width="540" height="360"></canvas>
+        <canvas id="cosinus" width="540" height="360"></canvas>
+        <canvas id="tangens" width="540" height="360"></canvas>
+        <canvas id="cotangens" width="540" height="360"></canvas>
+    </div>
+
+
+    <script src="program.js"></script>
+
+</body>
+
+</html>

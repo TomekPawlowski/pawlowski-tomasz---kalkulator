@@ -1,0 +1,77 @@
+body {
+    padding: 30px;
+      
+}
+
+.container {
+
+ width: 700px;
+ height: 800px;  
+ padding: 20px; 
+ margin: 20px; 
+ background-color: white;  
+ border: 5px solid darkslategrey;
+ float:left; 
+}
+
+.container2 {
+
+padding: 20px; 
+ margin: 20px; 
+ float:left;
+
+
+}
+
+
+.col-sm-3 {
+  
+  padding: 5px;
+
+}
+
+.col-sm-12 {
+
+   
+    font-size: 35px; 
+    text-align: right;
+    
+}
+
+
+input[type="button"]{
+
+    border: none;
+    height:100%;
+    width:100%;
+    display: inline-block;
+    padding: 32px 16px; 
+    font-size: 30px; 
+    background-color: lightgray; 
+    border-radius: 5px;
+}
+
+input[type="button"]:hover {
+
+    background-color: darkslategrey;
+}
+
+
+.row {
+    margin: 5px; 
+}
+
+canvas {
+
+    float: left;
+    border: 1px solid grey;  
+    margin: 5px; 
+}
+
+
+
+
+
+
+
+
